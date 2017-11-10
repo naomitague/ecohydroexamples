@@ -5,7 +5,7 @@
 #' @param        Tair    (deg C) air temperature
 #' @param    vpd     (Pa)    vapour pressure deficit
 #' @param     Rnet    (j/m2/day)      net radiation
-#' @param     gs      (mm/2)  surface conductance
+#' @param     gs      (mm/s)  surface conductance
 #' @param     ga      (mm/s)  aerodynamic conductance
 #' @param     CP  =      1010.0 (J/kg*K) specific heat of air
 #' @param     newp sensitivity analysis default=1
@@ -16,7 +16,7 @@
 
 
 penman_montieth =
-function(Tair, vpd, Rnet, gs,ga, CP=1010, Pair=101325, dayl=24,newp=1) {
+function(Tair, vpd, Rnet, gs=6,ga, CP=1010, Pair=101325, dayl=24) {
 
   #       Internal Variables
   #
@@ -70,6 +70,6 @@ function(Tair, vpd, Rnet, gs,ga, CP=1010, Pair=101325, dayl=24,newp=1) {
   ewater.day = ewater * 60*60 * dayl* 1000
 
   # return from your function
-  return(ewater.day*newp)
+  return(ewater.day)
 
 }

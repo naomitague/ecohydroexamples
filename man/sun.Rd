@@ -3,8 +3,8 @@
 \docType{data}
 \name{sun}
 \alias{sun}
-\title{Direct solar radiation at top of canopy}
-\format{An object of class \code{data.frame} with 3652 rows and 4 columns.}
+\title{Direct solar radiation and photosynthesis at top of canopy}
+\format{An object of class \code{data.frame} with 1461 rows and 10 columns.}
 \usage{
 sun
 }
@@ -13,13 +13,14 @@ Data from Sagehen simulation model (estimates based on latitude, day of year and
 and estimates of atmospheric transmissivity)
 }
 \details{
-@format A dataframe with 4 columns and 3652 row
+@format A dataframe with 5 columns and 1461 row
 \itemize{
 \item Kdown_direct downwelling solar radiation (J/m2/day)
 \item year
 \item month
 \item day
 \item wy water year
+\item psn kgC/m2/day
 }
 }
 \keyword{datasets}

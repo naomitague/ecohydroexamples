@@ -5,7 +5,7 @@
 \title{penman_montieth}
 \usage{
 penman_montieth(Tair, vpd, Rnet, gs, ga, CP = 1010, Pair = 101325,
-  dayl = 24, newp = 1)
+  dayl = 24)
 }
 \arguments{
 \item{Tair}{(deg C) air temperature}
